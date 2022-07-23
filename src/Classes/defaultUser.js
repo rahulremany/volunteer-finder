@@ -1,1 +1,9 @@
-let a = 4;
+import React from 'react'
+
+
+export default class defaultUser {
+    browse () {
+        
+    }
+}
+
