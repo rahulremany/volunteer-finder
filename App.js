@@ -4,6 +4,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Browse from './src/Pages/DefaultView/Browse';
 import Profile from './src/Pages/DefaultView/Profile';
+import VolunteerSignUp from './src/Pages/DefaultView/VolunteerSignUp';
+import OrgSignUp from './src/Pages/DefaultView/OrgSignUp';
 
 const Tab = createBottomTabNavigator();
 
@@ -13,6 +15,8 @@ export default function App() {
       <Tab.Navigator>
         <Tab.Screen name="Browse" component={Browse} />
         <Tab.Screen name="Profile" component={Profile} />
+        <Tab.Screen name="VolunteerSignUp" component={VolunteerSignUp} />
+        <Tab.Screen name="OrgSignUp" component={OrgSignUp} />
       </Tab.Navigator>
     </NavigationContainer>
   );
