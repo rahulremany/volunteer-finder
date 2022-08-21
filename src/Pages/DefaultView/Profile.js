@@ -9,7 +9,7 @@ export default class Profile extends React.Component {
     }
 
     createProfile = () => {
-        this.props.navigation.navigate("Browse");
+        
     }
 
     render() {
