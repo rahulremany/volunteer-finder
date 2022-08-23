@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, TextInput, Button } from 'react-native';
 
 export default class Browse extends React.Component {
   render() {
@@ -13,8 +13,6 @@ export default class Browse extends React.Component {
 
         <TextInput 
             style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
             placeholder = "enter your first name">
         </TextInput>
 
@@ -24,8 +22,6 @@ export default class Browse extends React.Component {
 
         <TextInput 
             style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
             placeholder = "enter your last name">
         </TextInput>
 
@@ -35,8 +31,6 @@ export default class Browse extends React.Component {
 
         <TextInput 
             style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
             placeholder = "enter your age">
         </TextInput>
 
@@ -46,8 +40,6 @@ export default class Browse extends React.Component {
 
         <TextInput 
             style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
             placeholder = "enter your zip code">
         </TextInput>
 
@@ -57,8 +49,6 @@ export default class Browse extends React.Component {
 
         <TextInput 
             style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
             placeholder = "choose a username">
         </TextInput>
 
@@ -68,14 +58,12 @@ export default class Browse extends React.Component {
 
         <TextInput
             style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
             placeholder = "choose a password">
         </TextInput>
 
-        <View style={styles.text}>
-        <Text>Sign Up</Text>
-        </View>
+        <Button onPress={() => {
+            this.props.navigation.navigate("Profile");
+        }} title="Sign Up" color="#841584"></Button>
 
         </View>
 

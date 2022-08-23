@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "91306971725",
+    "project_id": "volunteer-finder-d9655",
+    "storage_bucket": "volunteer-finder-d9655.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91306971725:android:c4f8aa5af9a17b9e20c204",
+        "android_client_info": {
+          "package_name": "com.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91306971725-qsrplk44siesqu94i8p21ej6r6hsvcaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaWypnrrXWaFsUoGuWSns-GKeWco3KyI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91306971725-qsrplk44siesqu94i8p21ej6r6hsvcaa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "91306971725-fs3aqppcct9sm14km76srl4hm0j77mhn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

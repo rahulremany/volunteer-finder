@@ -9,11 +9,11 @@ export default class Profile extends React.Component {
     }
 
     createVolunteerProfile = () => {
-        this.props.navigation.navigate ("VolunteerSignUp");
+        this.props.navigation.navigate("VolunteerSignUp");
     }
 
     createOrganizationProfile = () => {
-        this.props.navigation.navigate ("OrgSignUp");
+        this.props.navigation.navigate("OrgSignUp");
     }
 
     render() {
@@ -23,7 +23,7 @@ export default class Profile extends React.Component {
                 this.createVolunteerProfile();
             }} title="Create Volunteer Profile" color="#841584"></Button>
 
-<           Button onPress={() => {
+            <Button onPress={() => {
                 this.createOrganizationProfile();
             }} title="Create Organization Profile" color="#841584"></Button>
             

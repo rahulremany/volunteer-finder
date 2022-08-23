@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, TextInput, Button } from 'react-native';
 
 export default class Browse extends React.Component {
   render() {
@@ -7,75 +7,64 @@ export default class Browse extends React.Component {
 
         <View>
 
-        <Text>
-            Organization Name: 
-        </Text>
+            <Text>
+                Organization Name: 
+            </Text>
 
-        <TextInput 
-            style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
-            placeholder = "enter the name of your organization">
-        </TextInput>
+            <TextInput 
+                style={styles.input}
+                placeholder = "enter the name of your organization">
+            </TextInput>
 
-        <Text>
-            Description: 
-        </Text>
+            <Text>
+                Description: 
+            </Text>
 
-        <TextInput 
-            style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
-            placeholder = "enter a description">
-        </TextInput>
+            <TextInput 
+                style={styles.input}
+                placeholder = "enter a description">
+            </TextInput>
 
-        <Text>
-            Location: 
-        </Text>
+            <Text>
+                Location: 
+            </Text>
 
-        <TextInput 
-            style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
-            placeholder = "enter your zip code">
-        </TextInput>
+            <TextInput 
+                style={styles.input}
+                placeholder = "enter your zip code">
+            </TextInput>
 
-        <Text>
-            Website URL: 
-        </Text>
+            <Text>
+                Website URL: 
+            </Text>
 
-        <TextInput 
-            style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
-            placeholder = "enter your organization's website url">
-        </TextInput>
+            <TextInput 
+                style={styles.input}
+                placeholder = "enter your organization's website url">
+            </TextInput>
 
-        <Text>
-            Username: 
-        </Text>
+            <Text>
+                Username: 
+            </Text>
 
-        <TextInput 
-            style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
-            placeholder = "choose a username">
-        </TextInput>
+            <TextInput 
+                style={styles.input}
+                placeholder = "choose a username">
+            </TextInput>
 
-        <Text>
-        Password: 
-        </Text>
+            <Text>
+            Password: 
+            </Text>
 
-        <TextInput
-            style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
-            placeholder = "choose a password">
-        </TextInput>
+            <TextInput
+                style={styles.input}
+                placeholder = "choose a password">
+            </TextInput>
 
-        <View style={styles.text}>
-        <Text>Sign Up</Text>
-        </View>
+            
+            <Button onPress={() => {
+                this.props.navigation.navigate("Profile");
+            }} title="Sign Up" color="#841584"></Button>
 
         </View>
 
