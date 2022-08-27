@@ -10,6 +10,12 @@ export default class OrgSignUp extends React.Component {
             displayName: '',
             email: '',
             password: '',
+            age: '', 
+            zip_code: '', 
+            my_postings: '',
+            my_signups: '', 
+            bio: '', 
+            account_type: 'organization',
             isLoading: false,
         }
     }
@@ -61,7 +67,7 @@ export default class OrgSignUp extends React.Component {
             <View style={styles.container}>  
                 <TextInput
                 style={styles.inputStyle}
-                placeholder="Name"
+                placeholder="Organization Name"
                 value={this.state.displayName}
                 onChangeText={(val) => this.updateInputVal(val, 'displayName')}
                 />      
@@ -76,6 +82,22 @@ export default class OrgSignUp extends React.Component {
                 placeholder="Password"
                 value={this.state.password}
                 onChangeText={(val) => this.updateInputVal(val, 'password')}
+                maxLength={15}
+                secureTextEntry={true}
+                />   
+                <TextInput
+                style={styles.inputStyle}
+                placeholder="Zip Code"
+                value={this.state.password}
+                onChangeText={(val) => this.updateInputVal(val, 'zip_code')}
+                maxLength={15}
+                secureTextEntry={true}
+                />   
+                <TextInput
+                style={styles.inputStyle}
+                placeholder="Bio"
+                value={this.state.password}
+                onChangeText={(val) => this.updateInputVal(val, 'bio')}
                 maxLength={15}
                 secureTextEntry={true}
                 />   

@@ -10,6 +10,12 @@ export default class VolunteerSignUp extends React.Component {
             displayName: '',
             email: '',
             password: '',
+            age: '', 
+            zip_code: '', 
+            my_postings: '',
+            my_signups: '', 
+            bio: '', 
+            account_type: 'volunteer',
             isLoading: false,
         }
     }
@@ -57,6 +63,7 @@ export default class VolunteerSignUp extends React.Component {
             )
         }
 
+
         return (
             <View style={styles.container}>  
                 <TextInput
@@ -78,7 +85,21 @@ export default class VolunteerSignUp extends React.Component {
                 onChangeText={(val) => this.updateInputVal(val, 'password')}
                 maxLength={15}
                 secureTextEntry={true}
-                />   
+                />
+                <TextInput
+                style={styles.inputStyle}
+                placeholder="Age"
+                value={this.state.password}
+                onChangeText={(val) => this.updateInputVal(val, 'age')}
+                maxLength={15}
+                secureTextEntry={true} /> 
+                <TextInput
+                style={styles.inputStyle}
+                placeholder="Zip Code"
+                value={this.state.password}
+                onChangeText={(val) => this.updateInputVal(val, 'zip_code')}
+                maxLength={15}
+                secureTextEntry={true} /> 
                 <Button
                 color="#3740FE"
                 title="Signup"

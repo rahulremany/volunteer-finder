@@ -1,4 +1,5 @@
 import React from "react";
+import firebase from '../../../database/firebase';
 
 
 export class volunteerProfile extends React.Component {
@@ -8,7 +9,13 @@ export class volunteerProfile extends React.Component {
 
     render () {
         return (
-            <Text> ur mom </Text>
+            <View> 
+                <Text> Profile Pic </Text>
+                <Text> Name </Text>
+                <Text> Email: email@email.com </Text>
+            </View>
+
+
         )
     }
 }
