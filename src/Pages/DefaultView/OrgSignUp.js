@@ -45,7 +45,9 @@ export default class OrgSignUp extends React.Component {
                     isLoading: false,
                     displayName: '',
                     email: '',
-                    password: ''
+                    password: '',
+                    zip_code: '', 
+                    bio: '', 
                 })
                 this.props.navigation.navigate("Profile")
             })

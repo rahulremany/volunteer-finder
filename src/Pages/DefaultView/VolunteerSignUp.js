@@ -45,7 +45,9 @@ export default class VolunteerSignUp extends React.Component {
                     isLoading: false,
                     displayName: '',
                     email: '',
-                    password: ''
+                    password: '', 
+                    zip_code: '', 
+                    age: ''
                 })
                 this.props.navigation.navigate("Profile")
             })
